@@ -1,0 +1,26 @@
+<div  class="Blogs">
+
+    <div class="head">
+        <h1>Manage Blogs</h1>
+    </div>
+    <div class="'blogitem">
+        
+        <table class="tbl">
+            <thead>
+                <th>S No.</th>
+                <th>Blog Title</th>
+                <th>Actions</th>
+            </thead>
+            <tbody>
+                <tr *ngFor="let i of Array;let j=index;">
+                    <td>{{j}}</td>
+                    <td>{{i.title}}</td>
+                    <td ><button>Edit</button>
+                        <button (click)="view(i.title,i.desc)">View</button>
+                        <button>Delete</button></td>
+                    
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

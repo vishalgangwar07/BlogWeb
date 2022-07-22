@@ -1,0 +1,25 @@
+<div  class="Blogs">
+
+    <div class="head">
+        <h1>Create Blogs</h1>
+    </div>
+    <div class="'blogitem">
+
+    </div>
+    <div class="form">
+            Title*<br>
+            <input #tit type="text" size="40">
+        <br>
+        <br>
+        Description*
+        
+        <br>
+        <textarea #pst rows="15" cols="40"></textarea>
+        
+        <br>
+        <input (click)="cancel();tit.value='';pst.value=''" type="button" value="Cancel" class="btn">
+        <input (click)="post(tit.value,pst.value);tit.value='';pst.value=''" type="button" value="Post" class="btn">
+        
+    </div>
+</div>
+

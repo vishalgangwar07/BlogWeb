@@ -1,0 +1,17 @@
+<div class="main">
+  <div class="navbar">
+    <nav>
+      <ul>
+        <li (click)="Home()">Home</li>
+        <li (click)="Crea()">Create</li>
+        <li (click)="Mblog()">Manage Blogs</li>
+      </ul>
+    </nav>
+  </div>
+
+  <div [ngSwitch]="Current">
+    <app-create (parent)="receive($event)" *ngSwitchCase="'Crea'"></app-create>
+    <app-manage-blogs [Array]="Array" *ngSwitchCase="'Mblog'"></app-manage-blogs>
+    <app-home [Array]="Array" *ngSwitchCase="'Home'"></app-home>
+  </div>
+</div>

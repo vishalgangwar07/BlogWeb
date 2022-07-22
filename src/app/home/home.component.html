@@ -1,0 +1,23 @@
+<div  class="Blogs">
+
+    <div class="head">
+        <h1>My Blogs</h1>
+    </div>
+    <div class="'blogitem">
+
+        <table class="tbl">
+            <thead>
+                <th>title</th>
+                <th>Blog Title</th>
+                
+            </thead>
+            <tbody>
+                <tr *ngFor="let i of Array;let j=index;">
+                    <td>{{i.title}}</td>
+                    <td>{{i.desc}}</td>
+                </tr>
+            </tbody>
+        </table>
+        
+    </div>
+</div>
